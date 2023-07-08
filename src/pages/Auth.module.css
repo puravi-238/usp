@@ -1,0 +1,85 @@
+form.auth {
+    margin: 8rem auto;
+    width: 24vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField {
+    display: flex;
+    flex-direction: row;
+    gap:0.6rem;
+    align-items: center;
+
+    margin-bottom: 0.1rem;
+    padding: 1.2rem 0.8rem;
+
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+.inputField:hover,
+.inputField.selected {
+    opacity: 1;
+}
+
+.inputField.selected>svg{
+    fill: #111;
+}
+
+.inputField>svg {
+    height: 1.2rem;
+    width: 1.2rem;
+
+    fill: #888;
+}
+
+.inputField>input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+
+    font-size: 1rem;
+    font-family: calibri;
+}
+
+.inputField>input::placeholder {
+    color: #888;
+}
+
+form.auth>button {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.3rem;
+
+    border: none;
+    font-size: 1.2rem;
+    color: #eee;
+    background-color: var(--green);
+    opacity: 0.9;
+    font-family: calibri;
+    font-weight: bold;
+}
+
+form.auth>button:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.textButton {
+    font-size: 0.8rem;
+    align-self: flex-end;
+    margin-top: 0.1rem;
+    color: #fff;
+    opacity: 0.3;
+}
+
+.textButton:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.iconButton:hover {
+    cursor: pointer;
+    fill: var(--blue);
+}
